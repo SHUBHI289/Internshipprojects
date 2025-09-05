@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form Validation</title>
+ <style>
+    form { max-width: 400px; margin: 50px auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+    input, button { width: 100%; padding: 10px; margin: 10px 0; }
+    .error { color: red; font-size: 14px; }
+  </style>
+</head>
+<body>
+
+  <form id="myForm">
+    <input type="text" id="name" placeholder="Enter Name" required />
+    <div id="nameError" class="error"></div>
+
+    <input type="email" id="email" placeholder="Enter Email" required />
+    <div id="emailError" class="error"></div>
+
+    <input type="password" id="password" placeholder="Enter Password" required />
+    <div id="passwordError" class="error"></div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="form.js"></script>
+</body>
+</html>
